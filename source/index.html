@@ -1,12 +1,265 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header-logo" href="#">
+      <img class="main-header__logo-image" src="img/logotype-phone.svg" width="86" height="35"
+        alt="Логотип магазина Мишка.">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню
+        </span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">Новые поступления</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__search" href="">
+              <svg class="user-list__search-icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__basket" href="">
+              <svg class="user-list__basket-icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#icon-basket"></use>
+              </svg>Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Магазин товаров ручной работы для дома Мишка.</h1>
+    <section class="hero">
+      <div class="hero__wrapper">
+        <header class="hero__header">
+          <h2 class="hero__title">Милые штуки ручной работы для дома</h2>
+          <ul class="hero__list content">
+            <li class="hero__item content__item ">
+              <h3 class="content__title">Предметы интерьера</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="62" fill="none" viewBox="0 0 40 62">
+                <g fill="#149080" opacity=".5">
+                  <path
+                    d="M15.162 37.717c-.3.995-.2 2.19 0 3.582.499 2.588 1.696 5.971 2.394 9.654h5.087c.698-3.583 1.895-6.967 2.494-9.654.3-1.393.3-2.687 0-3.582-.3-.896-.898-1.593-1.995-2.29h-5.985c-1.197.697-1.796 1.394-1.995 2.29ZM26.933 57.621H13.167c-1.297 0-2.294.995-2.294 2.19V62h18.354v-2.19c0-1.194-.998-2.189-2.294-2.189ZM34.015 2.19h-11.67C22.344.994 21.346 0 20.05 0s-2.294.995-2.294 2.19H6.085L0 27.566c.798-.498 1.596-.995 2.594-.995 1.396 0 2.194.796 2.892 1.393.699.597 1.197.796 1.397.796.299 0 .798-.299 1.496-.796.698-.498 1.596-1.393 2.893-1.393 1.297 0 2.194.796 2.893 1.393.698.497 1.197.796 1.496.796.1 0 .3-.1.598-.199.2-.1.5-.398.898-.597.499-.398 1.097-.995 1.995-1.194.3-.1.599-.1.898-.1 1.297 0 2.194.796 2.893 1.393.698.498 1.197.797 1.496.797.3 0 .798-.299 1.396-.797.699-.597 1.596-1.393 2.893-1.393 1.397 0 2.195.796 2.893 1.393.3.299.598.498.898.598.2.1.399.199.598.199.3 0 .798-.299 1.397-.896.698-.597 1.596-1.393 2.892-1.393.998 0 1.796.497 2.594.995L34.015 2.189ZM23.442 53.143h-6.883c-.699 0-1.098.497-1.098 1.094 0 .597.5 1.095 1.098 1.095h6.883c.698 0 1.097-.498 1.097-1.095.1-.597-.4-1.094-1.098-1.094Z" />
+                  <path
+                    d="M20.05 28.76c-.1 0-.3.1-.599.199-.2.1-.399.298-.598.398v3.682h2.294v-3.583c-.499-.398-.898-.696-1.097-.696Z" />
+                </g>
+              </svg>
+            </li>
+            <li class="hero__item content__item ">
+              <h3 class="content__title">Детские игрушки</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
+                <path fill="#149080"
+                  d="M0 43.993 27.4 60V36.544L0 20.436v23.557Zm51.3-31.51V15c0 1.812-3.5 3.322-7.7 3.322-4.3 0-7.7-1.51-7.7-3.322v-4.127c.3 1.71 3.6 3.12 7.7 3.12 4.3 0 7.7-1.51 7.7-3.322S47.8 7.35 43.6 7.35h-1l-5-2.92V7.55c0 1.812-3.5 3.323-7.7 3.323-2.7 0-5-.604-6.4-1.51-.2-.202-.4-.403-.7-.605-.4-.402-.6-.805-.6-1.208V4.53L17.4 7.35h-1.1c-4.3 0-7.7 1.51-7.7 3.322s3.5 3.322 7.7 3.322c4.1 0 7.4-1.41 7.7-3.12V15c0 1.812-3.5 3.322-7.7 3.322-4.3 0-7.7-1.51-7.7-3.322v-2.416l-6 3.523 27.5 16.108 27.4-16.007-6.2-3.725ZM37.7 22.752c0 1.812-3.5 3.322-7.7 3.322-4.3 0-7.7-1.51-7.7-3.322v-4.128c.3 1.712 3.6 3.121 7.7 3.121s7.4-1.41 7.7-3.12v4.127Zm-5.1 13.993V60L60 43.993V20.738L32.6 36.745Zm-2.7-30.1c4.3 0 7.7-1.51 7.7-3.323C37.6 1.51 34.1 0 29.9 0c-4.3 0-7.7 1.51-7.7 3.322s3.4 3.322 7.7 3.322Z"
+                  opacity=".5" />
+              </svg>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="feature__wrapper">
+        <h2 class="feature__title">Вязаные корзинки</h2>
+        <span class="feature__product-of-week">ТОВАР НЕДЕЛИ</span>
+        <p class="feature__description">Экологически чистая пряжа,
+          ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+        <dl class="feature__list">
+          <dt class="feature__termin">Цвет:
+          </dt>
+          <dd class="feature__description">тиффани/серый</dd>
+          <dt class="feature__termin">Диаметр:
+          </dt>
+          <dd class="feature__description">25 см</dd>
+          <dt class="feature__termin">Высота:
+          </dt>
+          <dd class="feature__description">15 см</dd>
+        </dl>
+        <img src="" width="260" height="315" alt="">
+        <span>Цена: 990 руб.</span>
+        <a class="feature__button button" href="#">ЗАКАЗАТЬ</a>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="about-us__wrapper">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none" viewBox="0 0 33 38">
+              <path fill="#63D1BB"
+                d="M16.5 38C25.575 38 33 30.645 33 21.656c-9.075 0-16.5 7.253-16.5 16.344ZM4.744 16.65c0 2.554 2.062 4.495 4.537 4.495.928 0 1.856-.306 2.578-.817v.306c0 2.554 2.063 4.495 4.538 4.495 2.578 0 4.537-2.043 4.537-4.495v-.306c.722.51 1.65.817 2.578.817 2.579 0 4.538-2.043 4.538-4.494 0-1.84-1.031-3.371-2.578-4.086 1.547-.715 2.578-2.248 2.578-4.087 0-2.553-2.063-4.494-4.538-4.494-.928 0-1.856.306-2.578.817v-.306C20.934 1.94 18.872 0 16.397 0c-2.578 0-4.538 2.043-4.538 4.495V4.8a4.542 4.542 0 0 0-2.578-.817c-2.578 0-4.537 2.043-4.537 4.494 0 1.84 1.031 3.372 2.578 4.087-1.444.715-2.578 2.247-2.578 4.086ZM16.5 7.969c2.578 0 4.538 2.043 4.538 4.494 0 2.554-2.063 4.495-4.538 4.495-2.578 0-4.537-2.043-4.537-4.495 0-2.451 1.959-4.494 4.537-4.494ZM0 21.656C0 30.646 7.425 38 16.5 38c0-9.091-7.425-16.344-16.5-16.344Z" />
+            </svg>
+            <p class="about-us__description">Экологически чистые материалы</p>
+          </li>
+          <li class="about-us__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="27" fill="none" viewBox="0 0 47 27">
+              <path fill="#63D1BB"
+                d="M43.066 0H3.933C1.715 0 0 1.681 0 3.857v19.286C0 25.319 1.715 27 3.933 27h39.133C45.286 27 47 25.319 47 23.143V3.857C47 1.78 45.184 0 43.066 0ZM3.026 24.725V2.77H43.57v21.956H3.026Z" />
+              <path fill="#63D1BB"
+                d="M6.96 20.868h32.677V6.627H6.96v14.241ZM23.5 8.506c2.925 0 5.346 2.373 5.346 5.242 0 2.868-2.421 5.241-5.346 5.241-2.925 0-5.346-2.373-5.346-5.242 0-2.967 2.421-5.241 5.346-5.241Z" />
+            </svg>
+            <p class="about-us__description">Скандинавский стиль по российской цене</p>
+          </li>
+          <li class="about-us__item">
+            <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M34 8.44964C34 3.78777 29.9818 0 25.0364 0C21.5333 0 18.5455 1.94245 17 4.66187C15.5576 1.94245 12.4667 0 8.96364 0C4.01818 0 0 3.78777 0 8.44964C0 17.2878 15.1455 27 17 27C18.9576 27 34 17.3849 34 8.44964Z"
+                fill="#63D1BB" />
+            </svg>
+            <p class="about-us__description">Увеличивает лайкина фотографиях</p>
+          </li>
+          <li class="about-us__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" fill="none" viewBox="0 0 35 34">
+              <path fill="#63D1BB"
+                d="M.306 13.953a16.044 16.044 0 0 0 0 6.232l4.176-3.165-4.176-3.067ZM24.852 1.586C19.963-.59 14.259-.59 9.269 1.982l7.638 5.54 7.945-5.936ZM34.528 13.062l-4.889 3.66 4.99 3.66c.51-2.373.51-4.946-.101-7.32ZM9.37 32.057c4.89 2.473 10.899 2.671 15.991.099l-8.25-6.035-7.74 5.936ZM8.046 14.249 1.732 9.698c-.306.692-.612 1.385-.815 2.078l5.398 3.957 1.731-1.484ZM18.945 24.835l8.453 6.134c.306-.198.611-.396.815-.594.306-.198.611-.495.917-.791l-8.454-6.134-1.731 1.385ZM11.611 11.578 4.074 6.137c-.51.495-.917 1.088-1.324 1.682l7.028 5.144 1.833-1.385ZM22.51 22.163l8.25 6.035c.509-.494.916-1.088 1.324-1.681l-7.843-5.739-1.732 1.386ZM15.176 8.907 7.333 3.169c-.203.099-.407.297-.61.396-.408.296-.816.593-1.121.989l7.843 5.64 1.731-1.287ZM26.074 19.394l7.13 5.144c.306-.692.611-1.286.917-1.979l-6.213-4.55-1.834 1.385ZM26.89 2.674.916 22.362c.203.692.509 1.385.815 2.077L28.722 3.96c-.509-.494-1.12-.89-1.833-1.286ZM31.269 6.532c-.306-.395-.611-.791-.917-1.088L2.852 26.22c.204.494.51.89.815 1.187.102.198.305.396.407.494L31.778 7.127c-.204-.198-.305-.396-.51-.594ZM32.898 8.907 5.704 29.484c.509.495 1.12.99 1.731 1.385l26.482-19.984c-.306-.692-.611-1.385-1.019-1.978Z" />
+            </svg>
+            <p class="about-us__description">Связано вручную
+              с любовью и умилением</p>
+          </li>
+          <li class="about-us__item">
+            <svg width="55" height="23" viewBox="0 0 55 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M40.9467 5.75002C37.307 4.75864 33.0607 4.06466 28.41 4.06466C25.478 4.06466 22.8493 4.26294 20.625 4.65949L13.75 0H0.10114L5.9651 6.14656H14.4577C9.80697 7.73277 7.58272 9.61639 7.58272 9.61639V13.3836C7.58272 13.3836 9.90811 15.2672 14.5588 16.8534H5.86396L0 23H13.6489L20.5239 18.3405C22.8492 18.7371 25.3768 18.9354 28.3088 18.9354C32.8584 18.9354 37.1048 18.2414 40.8456 17.25C39.6324 15.4655 38.9246 13.5819 38.9246 11.4009C39.0257 9.4181 39.8345 7.5345 40.9467 5.75002Z"
+                fill="#63D1BB" />
+              <path
+                d="M44.4853 6.74121C43.1709 8.32742 42.4632 9.91361 42.4632 11.4998C42.4632 13.086 43.1709 14.6722 44.4853 16.2585C50.9559 14.0774 55 11.4998 55 11.4998C55 11.4998 50.9559 8.92224 44.4853 6.74121Z"
+                fill="#63D1BB" />
+            </svg>
+
+            <p class="about-us__description">Поддержка отечественного производителя</p>
+          </li>
+          <li class="about-us__item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" fill="none" viewBox="0 0 33 32">
+              <path fill="#63D1BB"
+                d="M3.028 32h12.614V18.272H3.028V32ZM31.385 8.691h-7.367c.505-.296 1.01-.493 1.413-.79 1.615-1.086 2.422-2.568 2.422-3.95 0-1.186-.605-2.173-1.413-2.865C25.633.396 24.523 0 23.413 0c-1.211 0-2.422.395-3.33 1.086-1.514.988-2.624 2.47-3.432 4.05 0 .099-.1.197-.1.197-.303-.592-.606-1.185-1.01-1.777-.706-.988-1.514-1.877-2.523-2.47C12.01.494 10.9 0 9.688 0c-1.21 0-2.321.494-3.23 1.284-.807.79-1.412 1.876-1.412 3.062 0 .691.202 1.481.605 2.173.606.888 1.413 1.58 2.624 2.172h-6.66C.706 8.691 0 9.383 0 10.271V16.1h15.541V8.69h1.918V16.1H33v-5.827c0-.89-.706-1.58-1.615-1.58ZM8.881 6.42c-.606-.395-1.01-.79-1.211-1.087-.202-.395-.303-.691-.303-.987 0-.494.202-.988.706-1.482.404-.395 1.01-.691 1.615-.691.707 0 1.413.197 2.018.691a7.6 7.6 0 0 1 2.624 3.16c.303.692.606 1.383.808 2.075-3.129-.297-5.147-.988-6.257-1.68Zm10.596-1.58c.606-.79 1.211-1.482 1.918-1.877.706-.494 1.412-.691 2.018-.691.605 0 1.11.197 1.514.493.403.297.605.692.605 1.186 0 .493-.303 1.284-1.514 2.074-1.11.79-3.128 1.679-6.156 2.271a10.88 10.88 0 0 1 1.615-3.456ZM17.46 32h12.614V18.272H17.46V32Z" />
+            </svg>
+            <p class="about-us__description">Поставляется
+              в подарочной упаковке</p>
+          </li>
+        </ul>
+        <div class="reviews">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__list">
+            <blockquote class="reviews__item">
+              <div class="reviews__author-info">
+                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                  лайков, как
+                  у популярных инстамамочек.
+                  В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                  и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__author-name">Анастасия Красильникова</cite>
+                <span class="reviews__author-email">@misssssiskras</span>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item">
+              <div class="reviews__author-info">
+                <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
+                  количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                  и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                  больше лайков!</p>
+                <cite class="reviews__author-name">Екатерина Красильникова</cite>
+                <span class="reviews__author-email">@misssssiskras2</span>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item">
+              <div class="reviews__author-info">
+                <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
+                  такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                  и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                  больше лайков!</p>
+                <cite class="reviews__author-name">Елена Красильникова</cite>
+                <span class="reviews__author-email">@misssssiskras3</span>
+              </div>
+            </blockquote>
+            <div class="reviews__button-wrapper">
+              <button class="reviews__button-prev" type="button">Предыдущий отзыв</button>
+              <button class="reviews__button-next" type="button">Следующий отзыв</button>
+            </div>
+            <a class="write-button button" href="#">Написать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <dl class="contacts__list">
+          <dt class="contacts__item">e-mail:</dt>
+          <dd class="contacts__description">info@mimimishkashop.ru</dd>
+          <dt class="contacts__item">адрес:</dt>
+          <dd class="contacts__description">г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101</dd>
+        </dl>
+        <img src="" alt="" width="320" height="454">
+        <a class="write-button button" href="#">Напишите нам</a>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logo"></div>
+      <div class="main-footer__social social">
+        <span class="visually-hidden">социальные сети.</span>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg
+            xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
+            <path fill="#63D1BB"
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg></a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal-container modal-container-close">
+    <div class="modal-container__inner">
+      <h2 class="modal-container__title">Добавить в корзину</h2>
+      <p class="modal-container__size-check">Выберите размер:</p>
+      <ul class="modal-container__list">
+        <li class="modal-container__item">
+          <button class="modal-container__button button">S</button>
+        </li>
+        <li class="modal-container__item">
+          <button class="modal-container__button button">M</button>
+        </li>
+        <li class="modal-container__item">
+          <button class="modal-container__button button">L</button>
+        </li>
+      </ul>
+      <button class="modal-container__add">Добавить</button>
+    </div>
+  </div>
+
+</body>
+
 </html>
