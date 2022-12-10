@@ -25,3 +25,44 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 668px;
+  }
+
+  .contacts__title {
+    font-weight: 700;
+    font-size: @table-title;
+    line-height: 50px;
+    grid-area: T;
+    text-align: start;
+  }
+
+  .contacts__list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-area: L;
+
+    &--adress {
+      grid-area: D;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 1050px;
+    display: grid;
+    grid-template-columns: 133px repeat(5, 1fr);
+    grid-template-areas:
+      "I W W M M M"
+      ". W W M M M"
+      ". B B M M M";
+  }
+
+  .contacts__map {
+    grid-area: M;
+  }
+}
+

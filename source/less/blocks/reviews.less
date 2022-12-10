@@ -55,3 +55,44 @@
   display: flex;
   padding-bottom: 38px;
 }
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: 668px;
+  }
+
+  .reviews__title {
+    grid-area: A;
+    font-weight: 700;
+    font-size: @table-title;
+    line-height: 50px;
+  }
+
+  .reviews__item {
+    grid-area: D;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__button-wrapper {
+    grid-area: E;
+  }
+
+  .reviews__button {
+    grid-area: B;
+  }
+
+  .reviews__container {
+    display: flex;
+    flex-direction: column;
+    grid-area: C;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: 1050px;
+  }
+}
+

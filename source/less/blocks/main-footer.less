@@ -2,3 +2,24 @@
   background: hwb(0 95% 5%);
   mix-blend-mode: normal;
 }
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    width: 767px;
+  }
+
+  .main-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    width: 1150px;
+  }
+}
+

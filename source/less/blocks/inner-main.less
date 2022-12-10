@@ -19,3 +19,31 @@
   color: #444444;
   mix-blend-mode: normal;
 }
+
+@media (min-width: @tablet-width) {
+  .inner-main {
+    width: 668px;
+  }
+
+  .inner-main__title {
+    font-weight: 700;
+    font-size: @table-title;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+
+  .inner-main__description {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-main {
+    width: 1150px;
+  }
+}

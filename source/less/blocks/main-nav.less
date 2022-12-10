@@ -12,3 +12,36 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    order: 2;
+  }
+
+  .main-nav {
+    grid-area: C;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    align-self: center;
+  }
+
+  .main-nav__wrapper {
+    width: 340px;
+  }
+}

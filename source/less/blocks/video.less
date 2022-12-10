@@ -28,3 +28,46 @@
   mix-blend-mode: normal;
   padding: 35px 30px 43px 34px;
 }
+
+@media (min-width: @tablet-width) {
+  .video {
+    width: 767px;
+  }
+
+  .video__image {
+    grid-area: I;
+  }
+
+  .video__container {
+    display: flex;
+    grid-area: T;
+  }
+
+  .video__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .video__description {
+    font-weight: 400;
+    font-size: @table-menu-font;
+    line-height: 30px;
+    grid-area: D;
+  }
+
+  .video__button {
+    grid-area: B;
+    width: 584px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 1050px;
+  }
+
+  .video__container {
+    display: flex;
+    flex-direction: column;
+  }
+}

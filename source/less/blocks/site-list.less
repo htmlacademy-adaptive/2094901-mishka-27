@@ -10,3 +10,44 @@
   text-decoration: none;
   color: #000000;
 }
+
+.site-list__hide-item {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    width: 334px;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    padding: 0;
+  }
+
+  .site-list__link {
+    font-size: @table-menu-font;
+  }
+
+  .site-list__hide-item {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr;
+  }
+
+  .site-list__item {
+    grid-row: 3/4;
+  }
+
+  .site-list__hide-item {
+    display: block;
+    grid-row: 5/6;
+  }
+}

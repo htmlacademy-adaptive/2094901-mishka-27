@@ -77,3 +77,171 @@
     padding: 28px 30px 46px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    &--feature {
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-template-areas:
+        "A A A C"
+        "B B D D"
+        "G . D D"
+        "E E D D"
+        "W W D D";
+    }
+
+    &--about-us {
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &--reviews {
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-template-areas:
+        "A . . B"
+        "D D D D"
+        "C C . E";
+    }
+
+    &--contacts {
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-template-areas:
+        "T . . I"
+        "L L D D";
+    }
+
+    &--contacts-button {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--footer {
+      width: 668px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--social {
+      padding: 0;
+    }
+
+    &--copyright {
+      padding: 0;
+    }
+
+    &--main-inner-title {
+      width: 668px;
+    }
+
+    &--card-content {
+      display: flex;
+      flex-direction: column;
+      grid-area: B;
+    }
+
+    &--video {
+      display: grid;
+      grid-template-areas:
+        "I I I I"
+        "T T . ."
+        "D D D D"
+        "B B B B";
+    }
+
+    &--filter {
+      padding-right: 0;
+      padding-left: 0;
+      width: 668px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    &--feature {
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-template-areas:
+        "C A A A . ."
+        ". B B D D D"
+        ". G G D D D"
+        ". E E D D D"
+        ". W W D D D";
+    }
+
+    &--about-us {
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: 133px repeat(5, 167px);
+    }
+
+    &--reviews {
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: 133px repeat(5, 1fr);
+      grid-template-areas:
+        ". A . . . B"
+        ". D D D D D"
+        ". C C . E E";
+    }
+
+    &--contacts {
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-area: W;
+      grid-template-areas:
+        "T T"
+        "L L"
+        "D D";
+    }
+
+    &--contacts-button {
+      grid-area: B;
+      justify-content: flex-start;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &--footer {
+      width: 1050px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--main-inner-title {
+      width: 1150px;
+    }
+
+    &--video {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+        "I I I I T T"
+        "I I I I T T"
+        "I I I I D D"
+        "I I I I B B";
+    }
+
+    &--filter {
+      padding-right: 0;
+      padding-left: 0;
+      width: 1050px;
+    }
+  }
+}

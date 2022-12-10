@@ -72,3 +72,60 @@
   line-height: 24px;
   color: #444444;
 }
+
+@media (min-width: @tablet-width) {
+  .feature {
+    width: 668px;
+  }
+
+  .feature__title {
+    grid-area: A;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feature__product-of-week {
+    grid-area: C;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .feature__description {
+    grid-area: B;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .feature__list {
+    grid-area: G;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .feature__img {
+    grid-area: D;
+  }
+
+  .feature__price {
+    grid-area: E;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .feature__button {
+    grid-area: W;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feature {
+    width: 1050px;
+  }
+}

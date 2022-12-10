@@ -44,3 +44,35 @@
     mix-blend-mode: normal;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .hero {
+    width: 668px;
+  }
+
+  .hero__background {
+    background-image: url("../img/hero-tablet.jpg");
+  }
+
+  .hero__title {
+    font-weight: 700;
+    font-size: @table-title;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    width: 1050px;
+  }
+
+  .hero__background {
+    background-image: url("../img/hero-desktop.jpg");
+  }
+
+  .hero__title {
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

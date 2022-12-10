@@ -32,3 +32,25 @@
   color: #000000;
   mix-blend-mode: normal;
 }
+
+@media (min-width: @tablet-width) {
+  .card__image {
+    grid-area: A;
+  }
+
+  .card__title {
+    font-weight: 700;
+    font-size: @table-title-2;
+    line-height: 24px;
+  }
+
+  .card__description {
+    font-weight: 400;
+    font-size: @table-menu-font;
+    line-height: 30px;
+  }
+
+  .card__price {
+    font-size: @table-title-3;
+  }
+}

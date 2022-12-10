@@ -9,6 +9,53 @@
   position: relative;
 }
 
+.main-header__note {
+  display: none;
+}
+
 .main-header__logo-image {
-  padding: 22px 117px;
+  padding: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 668px;
+    justify-content: space-between;
+    grid-template-areas:
+      "A . B B"
+      "C C D D";
+  }
+
+  .main-header__logo {
+    height: 79px;
+    margin: 0 auto;
+    grid-area: A;
+    align-items: center;
+    justify-self: start;
+  }
+
+  .main-header__note {
+    display: block;
+    grid-area: D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: right;
+    color: #444444;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 1050px;
+    justify-content: space-between;
+    grid-template-areas:
+      "C C A A B B"
+      "C C . . D D";
+  }
 }
