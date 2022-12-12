@@ -76,17 +76,21 @@
 
 @media (min-width: @tablet-width) {
   .filter__fieldset {
+    width: 668px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 128px auto;
-
-    &:nth-child(even) {
-      background-color: hwb(0 95% 5%);
-    }
   }
 
   .filter__input-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .filter__fieldset-container {
+    &:nth-child(even) {
+      background-color: hwb(0 95% 5%);
+    }
   }
 
   .filter__label {
@@ -108,6 +112,11 @@
     }
   }
 
+  .filter__button-container-wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+
   .filter__container {
     display: flex;
     flex-direction: row-reverse;
@@ -119,6 +128,7 @@
   .filter__fieldset {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    width: 1050px;
   }
 
   .filter__legend-container {
@@ -149,5 +159,9 @@
 
   .filter__container {
     grid-column: 2/6;
+  }
+
+  .filter__button-container-wrapper {
+    width: 1050px;
   }
 }

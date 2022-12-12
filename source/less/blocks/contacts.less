@@ -27,10 +27,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    width: 668px;
-  }
-
   .contacts__title {
     font-weight: 700;
     font-size: @table-title;
@@ -51,16 +47,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts {
-    width: 1050px;
-    display: grid;
-    grid-template-columns: 133px repeat(5, 1fr);
-    grid-template-areas:
-      "I W W M M M"
-      ". W W M M M"
-      ". B B M M M";
-  }
-
   .contacts__map {
     grid-area: M;
   }

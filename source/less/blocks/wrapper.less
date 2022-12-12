@@ -1,34 +1,43 @@
 .wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-
   &--feature {
     padding-top: 31px;
     padding-bottom: 36px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--about-us {
     padding-top: 31px;
     padding-bottom: 58px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--reviews {
     padding-bottom: 45px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--contacts {
     padding-top: 35px;
     padding-bottom: 62px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--contacts-button {
     padding-top: 42px;
     padding-bottom: 39px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--footer {
     padding-top: 25px;
     padding-bottom: 32px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--social {
@@ -41,14 +50,27 @@
 
   // Catalog
 
+  &--header {
+    width: 320px;
+    margin: 0 auto;
+  }
+
   &--main-inner-title {
+    padding-left: 0;
+    padding-right: 0;
     min-height: 177px;
     background: hwb(0 95% 5%);
+  }
+
+  &--hero {
+    margin: 0 auto;
   }
 
   &--catalog {
     padding-top: 30px;
     padding-bottom: 30px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--card-content {
@@ -64,13 +86,18 @@
 
   &--video {
     border: 1px solid hwb(0 93% 7%);
+    width: 260px;
+    margin: 0 auto;
     padding-top: 22px;
     padding-bottom: 33px;
     margin-bottom: 58px;
   }
+  //form
 
   &--filter {
     padding-bottom: 55px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &--container {
@@ -80,9 +107,22 @@
 
 @media (min-width: @tablet-width) {
   .wrapper {
+    &--header {
+      width: 772px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-between;
+      grid-template-areas:
+        "A . B B"
+        "C C D D";
+    }
+
     &--feature {
       padding-right: 0;
       padding-left: 0;
+      width: 668px;
+      margin: 0 auto;
       display: grid;
       grid-template-areas:
         "A A A C"
@@ -95,6 +135,8 @@
     &--about-us {
       padding-right: 0;
       padding-left: 0;
+      width: 668px;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
     }
@@ -102,6 +144,8 @@
     &--reviews {
       padding-right: 0;
       padding-left: 0;
+      width: 668px;
+      margin: 0 auto;
       display: grid;
       grid-template-areas:
         "A . . B"
@@ -112,6 +156,8 @@
     &--contacts {
       padding-right: 0;
       padding-left: 0;
+      width: 668px;
+      margin: 0 auto;
       display: grid;
       grid-template-areas:
         "T . . I"
@@ -124,9 +170,10 @@
     }
 
     &--footer {
-      width: 668px;
       padding-left: 50px;
       padding-right: 50px;
+      width: 668px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
     }
@@ -139,8 +186,14 @@
       padding: 0;
     }
 
-    &--main-inner-title {
+    &--hero {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &--catalog {
       width: 668px;
+      margin: 0 auto;
     }
 
     &--card-content {
@@ -150,6 +203,8 @@
     }
 
     &--video {
+      width: 668px;
+      margin: 0 auto;
       display: grid;
       grid-template-areas:
         "I I I I"
@@ -161,17 +216,30 @@
     &--filter {
       padding-right: 0;
       padding-left: 0;
-      width: 668px;
+      width: 100%;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .wrapper {
+    &--header {
+
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      width: 1050px;
+      justify-content: space-between;
+      grid-template-areas:
+        "C C A A B B"
+        "C C . . D D";
+    }
+
     &--feature {
       padding-right: 0;
       padding-left: 0;
+      width: 1050px;
       display: grid;
+      grid-template-columns: repeat(6, 175px);
       grid-template-areas:
         "C A A A . ."
         ". B B D D D"
@@ -183,22 +251,37 @@
     &--about-us {
       padding-right: 0;
       padding-left: 0;
+      width: 1050px;
       display: grid;
-      grid-template-columns: 133px repeat(5, 167px);
+      grid-template-columns: repeat(6, 175px);
     }
 
     &--reviews {
       padding-right: 0;
       padding-left: 0;
+      width: 1050px;
       display: grid;
-      grid-template-columns: 133px repeat(5, 1fr);
+      grid-template-columns: repeat(6, 175px);
       grid-template-areas:
-        ". A . . . B"
+        ". A . . B B"
         ". D D D D D"
         ". C C . E E";
     }
 
+    &--container {
+      width: 1050px;
+      margin: 0 auto;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(6, 175px);
+      grid-template-areas:
+        "I W W M M M"
+        ". W W M M M"
+        ". B B M M M";
+    }
+
     &--contacts {
+      width: 290px;
       padding-right: 0;
       padding-left: 0;
       display: grid;
@@ -224,11 +307,16 @@
       justify-content: space-between;
     }
 
-    &--main-inner-title {
+    &--hero {
       width: 1150px;
     }
 
+    &--catalog {
+      width: 1050px;
+    }
+
     &--video {
+      width: 1050px;
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       grid-template-areas:
@@ -241,7 +329,7 @@
     &--filter {
       padding-right: 0;
       padding-left: 0;
-      width: 1050px;
+      width: 100%;
     }
   }
 }
