@@ -62,10 +62,6 @@
     background: hwb(0 95% 5%);
   }
 
-  &--hero {
-    margin: 0 auto;
-  }
-
   &--catalog {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -119,17 +115,16 @@
     }
 
     &--feature {
+      .center-width();
       padding-right: 0;
       padding-left: 0;
-      width: 668px;
-      margin: 0 auto;
       display: grid;
       grid-template-areas:
-        "A A A C"
-        "B B D D"
-        "G . D D"
-        "E E D D"
-        "W W D D";
+        "A A C"
+        "B B D"
+        "G . D"
+        "E E D"
+        "W W D ";
     }
 
     &--about-us {
@@ -148,9 +143,9 @@
       margin: 0 auto;
       display: grid;
       grid-template-areas:
-        "A . . B"
-        "D D D D"
-        "C C . E";
+        "A B"
+        "D D"
+        "C E";
     }
 
     &--contacts {
@@ -160,8 +155,8 @@
       margin: 0 auto;
       display: grid;
       grid-template-areas:
-        "T . . I"
-        "L L D D";
+        "T I"
+        "L D";
     }
 
     &--contacts-button {
@@ -186,11 +181,6 @@
       padding: 0;
     }
 
-    &--hero {
-      width: 100%;
-      margin: 0 auto;
-    }
-
     &--catalog {
       width: 668px;
       margin: 0 auto;
@@ -207,10 +197,10 @@
       margin: 0 auto;
       display: grid;
       grid-template-areas:
-        "I I I I"
-        "T T . ."
-        "D D D D"
-        "B B B B";
+        "I I"
+        "T ."
+        "D D"
+        "B B";
     }
 
     &--filter {
@@ -239,13 +229,13 @@
       padding-left: 0;
       width: 1050px;
       display: grid;
-      grid-template-columns: repeat(6, 175px);
+      grid-template-columns: 175px repeat(2, 1fr);
       grid-template-areas:
-        "C A A A . ."
-        ". B B D D D"
-        ". G G D D D"
-        ". E E D D D"
-        ". W W D D D";
+        "C A D"
+        ". B D"
+        ". G D"
+        ". E D"
+        ". W D";
     }
 
     &--about-us {
@@ -253,7 +243,7 @@
       padding-left: 0;
       width: 1050px;
       display: grid;
-      grid-template-columns: repeat(6, 175px);
+      grid-template-columns: 175px 1fr 175px;
     }
 
     &--reviews {
@@ -261,11 +251,11 @@
       padding-left: 0;
       width: 1050px;
       display: grid;
-      grid-template-columns: repeat(6, 175px);
+      grid-template-columns: 175px repeat(2, 1fr);
       grid-template-areas:
-        ". A . . B B"
-        ". D D D D D"
-        ". C C . E E";
+        ". A B"
+        ". D D"
+        ". C E";
     }
 
     &--container {
@@ -273,18 +263,18 @@
       margin: 0 auto;
       padding: 0;
       display: grid;
-      grid-template-columns: repeat(6, 175px);
+      grid-template-columns: 175px 290px 1fr;
       grid-template-areas:
-        "I W W M M M"
-        ". W W M M M"
-        ". B B M M M";
+        "I W M"
+        ". B M";
     }
 
     &--contacts {
-      width: 290px;
       padding-right: 0;
       padding-left: 0;
       display: grid;
+      justify-self: start;
+      grid-template-columns: repeat(2, 145px);
       grid-area: W;
       grid-template-areas:
         "T T"
@@ -294,7 +284,7 @@
 
     &--contacts-button {
       grid-area: B;
-      justify-content: flex-start;
+      justify-self: start;
       padding-right: 0;
       padding-left: 0;
     }
@@ -307,10 +297,6 @@
       justify-content: space-between;
     }
 
-    &--hero {
-      width: 1150px;
-    }
-
     &--catalog {
       width: 1050px;
     }
@@ -318,12 +304,12 @@
     &--video {
       width: 1050px;
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
-        "I I I I T T"
-        "I I I I T T"
-        "I I I I D D"
-        "I I I I B B";
+        "I T"
+        "I T"
+        "I D"
+        "I B";
     }
 
     &--filter {
