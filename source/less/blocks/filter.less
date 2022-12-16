@@ -21,12 +21,10 @@
 }
 
 .filter__list {
+  .filter-name-title();
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
   color: #000000;
   mix-blend-mode: normal;
 
@@ -84,6 +82,10 @@
     grid-template-columns: 128px auto;
   }
 
+  .filter__list {
+    .filter-name-title-second ();
+  }
+
   .filter__input-container {
     display: flex;
     flex-direction: column;
@@ -133,11 +135,8 @@
     width: 1050px;
   }
 
-  .filter__legend-container {
-    justify-self: center;
-  }
-
   .filter__list {
+    .filter-name-title-second ();
     grid-column: 2/6;
 
     &--columns {

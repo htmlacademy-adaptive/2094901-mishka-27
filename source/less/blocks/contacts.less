@@ -1,23 +1,25 @@
+.contacts__wrapper {
+  .mobile-width-center();
+  padding-top: 35px;
+  padding-bottom: 62px;
+}
+
 .contacts__title {
+  .mobile-title-second();
   margin: 0;
   padding: 0;
   padding-bottom: 28px;
   text-align: center;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
   color: #000000;
 }
 
 .contacts__list {
+  .contacts-list-content-first();
   display: grid;
   grid-template-columns: auto 183px;
   row-gap: 43px;
   margin: 0;
   padding: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
   color: #444444;
 }
 
@@ -26,28 +28,82 @@
   padding: 0;
 }
 
+.contacts__button-wrapper {
+  padding-top: 42px;
+  padding-bottom: 39px;
+  width: 260px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    .tablet-width-center();
+  }
+
+  .contacts__container {
+    .tablet-width-center();
+    display: grid;
+    grid-template-areas:
+      "T I"
+      "L D";
+  }
+
   .contacts__title {
-    font-weight: 700;
-    font-size: @table-title;
-    line-height: 50px;
+    .tablet-title();
     grid-area: T;
     text-align: start;
   }
 
   .contacts__list {
+    .contacts-list-content-second();
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-area: L;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: D;
 
-    &--adress {
-      grid-area: D;
+    &:nth-child(2) {
+      grid-area: L;
     }
+  }
+
+  .contacts__button-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    .desktop-width-center();
+    display: grid;
+    grid-template-columns: 175px 290px 1fr;
+    grid-template-areas:
+      "I W M"
+      ". B M";
+  }
+
+  .contacts__container {
+    width: 290px;
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    grid-area: W;
+  }
+
+  .contacts__title {
+    .desktop-title();
+  }
+
   .contacts__map {
     grid-area: M;
+  }
+
+  .contacts__button-wrapper {
+    grid-area: B;
+    justify-self: start;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
   }
 }

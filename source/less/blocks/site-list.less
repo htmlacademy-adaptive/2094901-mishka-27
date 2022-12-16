@@ -4,6 +4,7 @@
   background: hwb(0 100% 0%);
   mix-blend-mode: normal;
   box-shadow: 0 1px 0 hsl(0, 0%, 93%), inset 0 1px 0 hsl(0, 0%, 93%);
+  .nav-first();
 }
 
 .site-list__link {
@@ -24,6 +25,7 @@
 
   .site-list__item {
     padding: 0;
+    .nav-first();
   }
 
   .site-list__link {
@@ -44,10 +46,12 @@
 
   .site-list__item {
     grid-row: 3/4;
+    .nav-second();
   }
 
   .site-list__hide-item {
     display: block;
+    .nav-first();
     grid-row: 5/6;
   }
 }

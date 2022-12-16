@@ -1,0 +1,24 @@
+.form__wrapper {
+  .mobile-width-center();
+  padding-bottom: 55px;
+}
+
+.form__description {
+  .form-description-first();
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrapper {
+    .tablet-width-center();
+  }
+
+  .form__description {
+    .form-description-second();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    .desktop-width-center();
+  }
+}

@@ -24,9 +24,8 @@
 
 @media (min-width: @tablet-width) {
   .content {
+    .tablet-width-center();
     display: grid;
-    width: 668px;
-    margin: 0 auto;
     grid-template-columns: repeat(2, auto);
   }
 
@@ -47,7 +46,7 @@
 
 @media (min-width: @desktop-width) {
   .content {
-    width: 1150px;
+    .desktop-width-center();
     grid-template-columns: repeat(6, 1fr);
   }
 
