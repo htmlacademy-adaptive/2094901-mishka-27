@@ -16,6 +16,15 @@
   justify-content: center;
 }
 
+.main-header__toggle {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  left: 269px;
+  top: 32px;
+  background: transparent;
+}
+
 .main-header__note {
   display: none;
 }
@@ -43,6 +52,10 @@
     justify-self: start;
   }
 
+  .main-header__toggle {
+    display: none;
+  }
+
   .main-header__note {
     display: block;
     grid-area: D;
@@ -65,5 +78,9 @@
     grid-template-areas:
       "C C A A B B"
       "C C . . D D";
+  }
+
+  .main-header__toggle {
+    display: none;
   }
 }
