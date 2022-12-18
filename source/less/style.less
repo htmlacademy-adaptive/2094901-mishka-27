@@ -1,8 +1,17 @@
+//global
+@import "../less/global/fonts.less";
+@import "../less/global/global.less";
+@import "../less/global/variables.less";
+@import "../less/global/mixin.less";
+
+//blocks
+//index
+@import "../less/blocks/main-container.less";
 @import "../less/blocks/page.less";
 @import "../less/blocks/main-header.less";
 @import "../less/blocks/main-nav.less";
 @import "../less/blocks/site-list.less";
-@import "../less/blocks/user-list.less";
+@import "../less/blocks/user-nav.less";
 @import "../less/blocks/hero.less";
 @import "../less/blocks/content.less";
 @import "../less/blocks/feature.less";
@@ -10,35 +19,15 @@
 @import "../less/blocks/reviews.less";
 @import "../less/blocks/contacts.less";
 @import "../less/blocks/main-footer.less";
-@import "../less/blocks/visually-hidden.less";
 @import "../less/blocks/button.less";
-@import "../less/blocks/wrapper.less";
 @import "../less/blocks/social.less";
 @import "../less/blocks/copyright.less";
 //catalog
-@import "../less/blocks/inner-main.less";
 @import "../less/blocks/catalog.less";
 @import "../less/blocks/card.less";
 @import "../less/blocks/video.less";
 //form
+@import "../less/blocks/form.less";
 @import "../less/blocks/filter.less";
 //modal
 @import "../less/blocks/modal-container.less";
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff2") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}

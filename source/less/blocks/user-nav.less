@@ -1,0 +1,32 @@
+.user-nav__list {
+  .nav-first();
+}
+
+.user-nav__item {
+  box-sizing: border-box;
+  padding: 29px 30px 27px 75px;
+  background: hsl(0, 0%, 100%);
+  mix-blend-mode: normal;
+  box-shadow: 0 1px 0 hsl(0, 0%, 93%), inset 0 1px 0 hsl(0, 0%, 93%);
+}
+
+@media (min-width: @tablet-width) {
+  .user-nav {
+    grid-area: B;
+    align-self: center;
+  }
+
+  .user-nav__list {
+    display: flex;
+    order: 1;
+  }
+
+  .user-nav__item {
+    padding: 0;
+  }
+}
+
+.user-nav__link {
+  text-decoration: none;
+  color: #000000;
+}

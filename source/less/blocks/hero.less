@@ -1,3 +1,17 @@
+.hero {
+  &--second {
+    background: hwb(0 95% 5%);
+  }
+}
+
+.hero__wrapper {
+  &--second {
+    .mobile-width-center();
+    padding-top: 75px;
+    padding-bottom: 74px;
+  }
+}
+
 .hero__background {
   margin: 0;
   padding: 0;
@@ -14,10 +28,8 @@
 .hero__title {
   margin: 0;
   padding: 0;
-  position: absolute;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
+  text-align: center;
+  .mobile-title();
   color: #000000;
   left: 30px;
   top: 152px;
@@ -42,5 +54,42 @@
   &--darken {
     background: hsl(171, 47%, 55%);
     mix-blend-mode: normal;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hero__wrapper {
+    &--second {
+      .tablet-width-center();
+      padding-top: 100px;
+      padding-bottom: 63px;
+    }
+  }
+
+  .hero__background {
+    background-image: url("../img/hero-tablet.jpg");
+  }
+
+  .hero__title {
+    text-align: center;
+    .tablet-title();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero__wrapper {
+    &--second {
+      .desktop-width-center();
+      padding-top: 100px;
+      padding-bottom: 79px;
+    }
+  }
+
+  .hero__background {
+    background-image: url("../img/hero-desktop.jpg");
+  }
+
+  .hero__title {
+    .desktop-title();
   }
 }

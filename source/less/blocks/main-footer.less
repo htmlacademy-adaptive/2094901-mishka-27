@@ -2,3 +2,49 @@
   background: hwb(0 95% 5%);
   mix-blend-mode: normal;
 }
+
+.main-footer__wrapper {
+  .mobile-width-center();
+  padding-top: 25px;
+  padding-bottom: 32px;
+}
+
+.main-footer__social {
+  padding-bottom: 28px;
+}
+
+.main-footer__copyright {
+  padding-top: 29px;
+}
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    .tablet-width-center();
+    padding: 51px 50px 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__social {
+    padding-bottom: 0;
+  }
+
+  .main-footer__copyright {
+    padding-top: 0;
+  }
+
+  .main-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    .desktop-width-center();
+  }
+}
