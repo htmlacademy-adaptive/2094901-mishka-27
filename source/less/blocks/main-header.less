@@ -4,33 +4,10 @@
   padding: 0;
   font-family: "Opensans", "Arial", sans-serif;
   font-style: normal;
-  position: relative;
-}
-
-.main-header__wrapper {
-  .mobile-width();
-}
-
-.main-header__logo {
-  display: flex;
-  justify-content: center;
-}
-
-.main-header__toggle {
-  position: absolute;
-  cursor: pointer;
-  border: none;
-  left: 269px;
-  top: 32px;
-  background: transparent;
 }
 
 .main-header__note {
   display: none;
-}
-
-.main-header__logo-image {
-  padding: 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -57,6 +34,8 @@
   }
 
   .main-header__note {
+    padding-top: 20px;
+    position: absolute;
     display: block;
     grid-area: D;
     font-style: normal;
@@ -65,6 +44,8 @@
     line-height: 24px;
     text-align: right;
     color: #444444;
+    z-index: 2;
+    right: 0;
   }
 }
 

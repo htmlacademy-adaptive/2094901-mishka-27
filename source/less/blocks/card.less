@@ -5,6 +5,14 @@
 .card__content-wrapper {
   border: 1px solid hwb(0 93% 7%);
   padding: 28px;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .card__title {
@@ -15,6 +23,14 @@
   line-height: 24px;
   color: #000000;
   padding-bottom: 5px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__description {
@@ -25,13 +41,21 @@
   line-height: 30px;
   color: #444444;
   mix-blend-mode: normal;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 204px;
+    height: 1px;
+    background-color: hwb(0 93% 7%);
+    margin-top: 17px;
+  }
 }
 
 .card__price-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 23px;
 }
 
 .card__price {
@@ -44,18 +68,39 @@
   mix-blend-mode: normal;
 }
 
+.card__icon {
+  fill: hwb(0 0% 100%);
+  opacity: 0.2;
+
+  &:hover {
+    fill: hwb(168 39% 18%);
+    opacity: 1;
+  }
+
+  &:active {
+    fill: hwb(168 39% 18%);
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .card__image {
     grid-area: A;
   }
 
   .card__content-wrapper {
+    padding: 27px 32px 27px 34px;
     display: flex;
     flex-direction: column;
     grid-area: B;
+    position: relative;
+    width: 262px;
+    min-height: 145px;
+    justify-content: space-between;
   }
 
   .card__title {
+    padding-bottom: 7px;
     font-weight: 700;
     font-size: @table-title-2;
     line-height: 24px;
@@ -65,6 +110,14 @@
     font-weight: 400;
     font-size: @table-menu-font;
     line-height: 30px;
+    padding-bottom: 23px;
+
+    &::after {
+      width: 268px;
+      margin-top: 36px;
+      position: absolute;
+      bottom: 73px;
+    }
   }
 
   .card__price {

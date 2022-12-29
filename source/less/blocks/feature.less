@@ -25,6 +25,10 @@
   text-transform: uppercase;
   color: hsl(168, 54%, 60%);
   padding-bottom: 17px;
+
+  & br {
+    display: none;
+  }
 }
 
 .feature__description {
@@ -38,12 +42,11 @@
 .feature__list {
   .feature-list();
   display: grid;
-  grid-template-columns: auto 162px;
+  grid-template-columns: 97px 162px;
   row-gap: 20px;
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 41px;
   color: #444444;
-  border-bottom: 1px solid hwb(0 93% 7%);
 }
 
 .feature__name {
@@ -59,13 +62,13 @@
 
 .feature__img {
   display: block;
+  padding-bottom: 25px;
 }
 
 .feature__price {
   .feature-price-first();
   display: block;
   text-align: center;
-  padding-top: 25px;
   padding-bottom: 25px;
 
   color: #444444;
@@ -74,35 +77,47 @@
 @media (min-width: @tablet-width) {
   .feature__wrapper {
     .tablet-width-center();
+    padding-top: 39px;
+    padding-bottom: 52px;
     display: grid;
+    grid-template-columns: 292px 1fr 1fr;
     grid-template-areas:
       "A A C"
-      "B B D"
-      "G . D"
-      "E E D"
-      "W W D ";
+      "B D D"
+      "G D D"
+      "E D D"
+      "W D D";
   }
 
   .feature__title {
     .tablet-title();
+    padding-bottom: 38px;
     grid-area: A;
   }
 
   .feature__product-of-week {
+    padding-bottom: 60px;
     grid-area: C;
     font-weight: 700;
     font-size: 17px;
     line-height: 17px;
     text-align: center;
+    align-self: center;
     text-transform: uppercase;
+
+    & br {
+      display: block;
+    }
   }
 
   .feature__description {
     .feature-content-second();
+    padding-bottom: 48px;
     grid-area: B;
   }
 
   .feature__list {
+    padding-bottom: 70px;
     grid-area: G;
   }
 
@@ -112,6 +127,7 @@
 
   .feature__price {
     .feature-price-second();
+    padding-bottom: 33px;
     grid-area: E;
     font-weight: 700;
     font-size: 20px;
@@ -126,8 +142,10 @@
 @media (min-width: @desktop-width) {
   .feature__wrapper {
     .desktop-width-center();
+    padding-top: 54px;
+    padding-bottom: 73px;
     display: grid;
-    grid-template-columns: 175px repeat(2, 1fr);
+    grid-template-columns: 175px auto 525px;
     grid-template-areas:
       "C A D"
       ". B D"
@@ -137,6 +155,30 @@
   }
 
   .feature__title {
+    padding-top: 61px;
+    padding-bottom: 35px;
     .desktop-title();
+  }
+
+  .feature__product-of-week {
+    padding-bottom: 0;
+  }
+
+  .feature__description {
+    padding-bottom: 60px;
+  }
+
+  .feature__list {
+    padding-bottom: 124px;
+  }
+
+  .feature__price {
+    padding-bottom: 33px;
+    padding-left: 71px;
+    justify-self: start;
+  }
+
+  .feature__button {
+    justify-self: start;
   }
 }

@@ -10,10 +10,10 @@
 
 .reviews__title {
   .mobile-title-second();
+  text-align: start;
   margin: 0;
   padding: 0;
   color: #000000;
-  text-align: center;
 }
 
 .reviews__list {
@@ -22,19 +22,22 @@
 }
 
 .reviews__item {
+  .reviews-content-first();
   display: block;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 18px;
 }
 
 .reviews__text {
-  .reviews-content-first();
   margin: 0;
   padding: 0;
   min-width: 260px;
   color: #444444;
-  padding-bottom: 18px;
+}
+
+.reviews__container {
+  padding-bottom: 30px;
 }
 
 .reviews__author-name {
@@ -52,9 +55,38 @@
   padding-bottom: 38px;
 }
 
+.reviews__button {
+  margin: 0;
+  padding: 13px;
+  width: 130px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 1px solid hwb(0 93% 7%);
+}
+
+.reviews__image {
+  fill: hwb(0 0% 100%);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
+  .reviews {
+    background-image: url("../../img/reviews_tablet_background.jpg");
+    background-size: 350px 457px;
+    background-repeat: no-repeat;
+  }
+
   .reviews__wrapper {
     .tablet-width-center();
+    padding-top: 82px;
+    padding-bottom: 85px;
     display: grid;
     grid-template-areas:
       "A B"
@@ -70,6 +102,8 @@
 
   .reviews__item {
     .reviews-content-second();
+    padding-top: 39px;
+    padding-bottom: 61px;
     grid-area: D;
   }
 
@@ -79,10 +113,16 @@
   }
 
   .reviews__button {
+    border: none;
+  }
+
+  .reviews__button-container {
+    justify-self: end;
     grid-area: B;
   }
 
   .reviews__container {
+    padding-bottom: 47px;
     display: flex;
     flex-direction: column;
     grid-area: C;
@@ -90,8 +130,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .reviews {
+    background-image: none;
+  }
+
   .reviews__wrapper {
     .desktop-width-center();
+    background-image: url("../../img/reviews_tablet_background.jpg");
+    background-size: 350px 457px;
+    background-repeat: no-repeat;
+    padding-top: 78px;
+    padding-bottom: 67px;
     display: grid;
     grid-template-columns: 175px repeat(2, 1fr);
     grid-template-areas:
@@ -102,5 +151,19 @@
 
   .reviews__title {
     .desktop-title();
+    padding-bottom: 35px;
+  }
+
+  .reviews__item {
+    padding-top: 0;
+    padding-bottom: 44px;
+  }
+
+  .reviews__container {
+    padding-bottom: 96px;
+  }
+
+  .reviews__button-wrapper {
+    padding-bottom: 96px;
   }
 }

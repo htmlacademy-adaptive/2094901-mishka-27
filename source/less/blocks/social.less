@@ -1,5 +1,7 @@
 .social__list {
+  width: 142px;
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -7,4 +9,17 @@
 
 .social__link {
   text-decoration: none;
+}
+
+.social__icon {
+  fill: hwb(345 12% 86%);
+
+  &:hover {
+    fill: hwb(171 27% 24%);
+  }
+
+  &:active {
+    fill: hwb(171 27% 24%);
+    opacity: 0.3;
+  }
 }

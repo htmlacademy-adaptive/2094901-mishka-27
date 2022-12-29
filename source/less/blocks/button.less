@@ -12,6 +12,20 @@
   display: block;
   box-sizing: border-box;
 
+  &:hover {
+    background: #444444;
+    mix-blend-mode: normal;
+    border: 2px solid #444444;
+    color: rgb(255, 255, 255);
+  }
+
+  &:active {
+    background: #444444;
+    mix-blend-mode: normal;
+    border: 2px solid #444444;
+    color: rgb(255, 255, 255, 0.3);
+  }
+
   &--first {
     padding: 16px 20px;
     width: 260px;
@@ -100,10 +114,18 @@
 
 @media (min-width: @desktop-width) {
   .button {
+    &--first {
+      justify-self: start;
+    }
+
     &--five {
       padding: 16px 20px;
       width: 230px;
       justify-self: end;
+    }
+
+    &--third {
+      margin: 0;
     }
   }
 }
