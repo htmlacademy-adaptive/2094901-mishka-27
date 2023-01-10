@@ -7,6 +7,7 @@
   .mobile-width-center();
   padding-top: 31px;
   padding-bottom: 36px;
+  position: relative;
 }
 
 .feature__title {
@@ -117,12 +118,17 @@
   }
 
   .feature__list {
-    padding-bottom: 70px;
     grid-area: G;
   }
 
   .feature__img {
+    padding-bottom: 0;
+  }
+
+  .feature__image-container {
     grid-area: D;
+    padding-bottom: 0;
+    justify-self: end;
   }
 
   .feature__price {
@@ -142,8 +148,9 @@
 @media (min-width: @desktop-width) {
   .feature__wrapper {
     .desktop-width-center();
-    padding-top: 54px;
-    padding-bottom: 73px;
+    position: relative;
+    margin-top: 54px;
+    margin-bottom: 73px;
     display: grid;
     grid-template-columns: 175px auto 525px;
     grid-template-areas:
@@ -155,9 +162,10 @@
   }
 
   .feature__title {
-    padding-top: 61px;
-    padding-bottom: 35px;
     .desktop-title();
+    position: absolute;
+    width: 545px;
+    top: 61px;
   }
 
   .feature__product-of-week {
@@ -165,11 +173,16 @@
   }
 
   .feature__description {
+    padding-top: 120px;
     padding-bottom: 60px;
   }
 
   .feature__list {
-    padding-bottom: 124px;
+    padding-bottom: 109px;
+  }
+
+  .feature__img {
+    padding-bottom: 0;
   }
 
   .feature__price {

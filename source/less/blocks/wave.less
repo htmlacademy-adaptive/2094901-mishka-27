@@ -1,7 +1,9 @@
 .wave {
-  &--second {
-    background-image: url("../../img/grey_wave_mobile.svg");
-    width: 320px;
+  &--second::after {
+    content: "";
+    display: block;
+    background-image: url("/img/grey_wave_mobile.svg");
+    width: 100%;
     margin: 0 auto;
     height: 6px;
   }
@@ -9,17 +11,23 @@
 
 @media (min-width: @tablet-width) {
   .wave {
-    width: 100%;
-    margin: 0 auto;
-    height: 34px;
-    position: absolute;
-    margin-top: -20px;
-    background-image: url("../../img/white_wave_tablet.svg");
-    background-repeat: repeat-x;
-    background-position: center;
+    &::after {
+      content: "";
+      width: 100%;
+      margin: 0 auto;
+      height: 34px;
+      position: absolute;
+      margin-top: -20px;
+      background-image: url("/img/white_wave_tablet.svg");
+      background-repeat: repeat-x;
+      background-position: center;
+    }
 
-    &--second {
-      background-image: url("../../img/grey_wave_tablet.svg");
+
+    &--second::after {
+      content: "";
+      display: block;
+      background-image: url("/img/grey_wave_tablet.svg");
       width: 100%;
       margin: 0 auto;
       height: 17px;
@@ -29,14 +37,20 @@
 
 @media (min-width: @desktop-width) {
   .wave {
-    width: 100%;
-    background-image: url("../../img/white_wave_desktop.svg");
-    background-repeat: repeat-x;
-    background-position: center;
+    &::after {
+      content: "";
+      width: 100%;
+      background-image: url("/img/white_wave_desktop.svg");
+      background-repeat: repeat-x;
+      background-position: center;
+    }
 
-    &--second {
-      background-image: url("../../img/grey_wave_desktop.svg");
-      width: 1050px;
+
+    &--second::after {
+      content: "";
+      display: block;
+      background-image: url("/img/grey_wave_desktop.svg");
+      width: 100%;
       height: 23px;
     }
   }
