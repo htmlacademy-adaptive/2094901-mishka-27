@@ -16,17 +16,17 @@
   margin: 0;
   padding: 0;
   position: relative;
-  background-image: url("../img/hero-mobile@2x.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 400px;
+  background-position: 50% -40px;
+  background-size: auto;
   min-height: 283px;
 }
 
 .hero__title {
   .mobile-title();
-  padding: 50px 30px 100px;
+  padding: 73px 30px 100px;
   margin: 0;
   text-align: center;
   color: #000000;
@@ -75,8 +75,14 @@
 
   .hero__background {
     min-height: 627px;
-    background-size: auto 928px;
     background-image: url("../img/hero-tablet.jpg");
+    background-position: 50% 0;
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: contain;
+    }
   }
 
   .hero__item {
@@ -85,7 +91,7 @@
 
   .hero__title {
     .tablet-title();
-    padding: 100px 20px 75px;
+    padding: 155px 20px 75px;
     text-align: center;
   }
 }
@@ -103,6 +109,6 @@
 
   .hero__title {
     .desktop-title();
-    padding: 102px 30px 95px;
+    padding: 158px 30px 95px;
   }
 }
