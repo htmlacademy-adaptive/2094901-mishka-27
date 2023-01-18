@@ -18,11 +18,12 @@
       <div class="main-nav__header-wrapper">
         <a class="main-nav__header-logo" href="index.html">
           <picture>
-            <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="149px" height="72px"
+            <source media="(min-width:1150px)" srcset="img/logo-desktop.svg" width="149px" height="72px">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="113px" height="46px">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86px" height="35px"
               alt="Логотип магазина Мишка.">
           </picture>
+
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню
           </span>
@@ -30,23 +31,23 @@
         </button>
       </div>
       <ul class="main-nav__list site-nav">
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
+        <li class="main-nav__item site-nav__item">
+          <a class="main-nav__link site-nav__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="form.html">Вязание на заказ</a>
+        <li class="main-nav__item site-nav__item">
+          <a class="main-nav__link site-nav__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="main-nav__list user-nav">
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="">
-            <svg class="user-nav__search-icon" width="18" height="18">
+        <li class="main-nav__item user-nav__item">
+          <a class="main-nav__link user-nav__link" href="">
+            <svg class="user-nav__icon" width="18" height="18">
               <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>Поиск по сайту</a>
+            </svg><span class="main-nav__link user-nav__search">Поиск по сайту</span></a>
         </li>
-        <li class="user-nav__item">
+        <li class="main-nav__item user-nav__item">
           <a class="user-nav__link" href="">
-            <svg class="user-nav__basket-icon" width="18" height="18">
+            <svg class="user-nav__icon" width="20" height="19">
               <use xlink:href="img/sprite.svg#icon-basket"></use>
             </svg>Корзина: пока пуста</a>
         </li>
@@ -65,20 +66,20 @@
   <main class="inner-main main-container">
     <section class="hero hero--second">
       <div class="hero__wrapper hero__wrapper--second">
-        <h1 class="hero__title">Вязание на заказ</h1>
+        <h1 class="hero__title hero__title--second">Вязание на заказ</h1>
       </div>
       <div class="wave"></div>
     </section>
     <section class="form">
       <h2 class="visually-hidden">Форма для заказа.</h2>
-      <div class="form__wrapper">
-        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+      <div class="form__wrapper form__wrapper--title">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму <br> заказа
           и
           мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
         <div class="filter__fieldset-container">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--type">
             <fieldset class="filter__fieldset ">
               <p class="filter__legend">ТИП</p>
               <ul class="filter__list">
@@ -102,34 +103,34 @@
           </div>
         </div>
         <div class="filter__fieldset-container">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--color">
             <fieldset class="filter__fieldset">
-              <p class="filter__legend">Цвет</p>
+              <p class="filter__legend filter__legend--color">Цвет</p>
               <ul class="filter__list filter__list--columns">
                 <li class="filter__item filter__item--second">
                   <label class="filter__label">
                     <input class="visually-hidden filter__input" type="checkbox" name="white" checked>
-                    <span class="filter__mark"></span>
+                    <span class="filter__mark filter__mark--second"></span>
                     <span class="filter__name">Белый</span>
                   </label>
                 </li>
                 <li class="filter__item filter__item--second">
                   <label class="filter__label">
                     <input class="visually-hidden filter__input" type="checkbox" name="grey" checked>
-                    <span class="filter__mark"></span>
+                    <span class="filter__mark filter__mark--second"></span>
                     <span class="filter__name">Серый</span>
                   </label>
                 <li class="filter__item filter__item--second">
                   <label class="filter__label">
                     <input class="visually-hidden filter__input" type="checkbox" name="tiffany">
-                    <span class="filter__mark"></span>
+                    <span class="filter__mark filter__mark--second"></span>
                     <span class="filter__name">Тиффани</span>
                   </label>
                 </li>
                 <li class="filter__item filter__item--second">
                   <label class="filter__label">
                     <input class="visually-hidden filter__input" type="checkbox" name="black">
-                    <span class="filter__mark"></span>
+                    <span class="filter__mark filter__mark--second"></span>
                     <span class="filter__name">Черный</span>
                   </label>
                 </li>
@@ -137,14 +138,14 @@
                   <label class="filter__label">
 
                     <input class="visually-hidden filter__input" type="checkbox" name="pink">
-                    <span class="filter__mark"></span>
+                    <span class="filter__mark filter__mark--second"></span>
                     <span class="filter__name">Розовый</span>
                   </label>
                 </li>
                 <li class="filter__item filter__item--second">
                   <label class="filter__label">
                     <input class="visually-hidden filter__input" type="checkbox" name="orange">
-                    <span class="filter__mark"></span>
+                    <span class="filter__mark filter__mark--second"></span>
                     <span class="filter__name">Оранжевый</span>
                   </label>
                 </li>
@@ -153,9 +154,9 @@
           </div>
         </div>
         <div class="filter__fieldset-container">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--name">
             <fieldset class="filter__fieldset">
-              <p class="filter__legend">ФИО</p>
+              <p class="filter__legend filter__legend--name">ФИО</p>
               <div class="filter__input-container">
                 <label class="filter__label filter__label--input">Имя:
                   <input class="filter__input filter__input--position" type="text" name="first-name"
@@ -174,13 +175,16 @@
           </div>
         </div>
         <div class="filter__fieldset-container">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--phone">
             <fieldset class="filter__fieldset">
               <p class="filter__legend filter__legend--second">тел</p>
               <div class="filter__input-container">
-                <label class="filter__label filter__label--input">
+                <label class="filter__label filter__label--input filter__label--name">
                   <input class="filter__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                </label>
+
+                  <svg class="filter__icon" width="25" height="24">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg></label>
               </div>
             </fieldset>
             <fieldset class="filter__fieldset">
@@ -188,17 +192,20 @@
               <div class="filter__input-container">
                 <label class="filter__label filter__label--input">
                   <input class="filter__input" type="email" name="E-mail" placeholder="Ваш Email*">
-                </label>
+
+                  <svg class="filter__icon" width="32" height="21">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg></label>
               </div>
             </fieldset>
           </div>
         </div>
         <div class="filter__fieldset-container">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--more">
             <fieldset class="filter__fieldset">
-              <p class="filter__legend">Доп</p>
+              <p class="filter__legend filter__legend--more">Доп</p>
               <div class="filter__input-container">
-                <label class="filter__label filter__label--input">
+                <label class="filter__label filter__label--input filter__label--more">
                   <textarea class="filter__input filter__input--large" type="text" name="extra"
                     placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </label>
@@ -259,7 +266,7 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <svg class="copyright__image" xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35">
             <path

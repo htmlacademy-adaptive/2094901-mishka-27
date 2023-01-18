@@ -18,11 +18,12 @@
       <div class="main-nav__header-wrapper">
         <a class="main-nav__header-logo" href="index.html">
           <picture>
-            <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="149px" height="72px"
+            <source media="(min-width:1150px)" srcset="img/logo-desktop.svg" width="149px" height="72px">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="113px" height="46px">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86px" height="35px"
               alt="Логотип магазина Мишка.">
           </picture>
+
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню
           </span>
@@ -30,23 +31,23 @@
         </button>
       </div>
       <ul class="main-nav__list site-nav">
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
+        <li class="main-nav__item site-nav__item">
+          <a class="main-nav__link site-nav__link" href="#">Каталог товаров</a>
         </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="form.html">Вязание на заказ</a>
+        <li class="main-nav__item site-nav__item">
+          <a class="main-nav__link site-nav__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="main-nav__list user-nav">
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="">
-            <svg class="user-nav__search-icon" width="18" height="18">
+        <li class="main-nav__item user-nav__item">
+          <a class="main-nav__link user-nav__link" href="">
+            <svg class="user-nav__icon" width="18" height="18">
               <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>Поиск по сайту</a>
+            </svg><span class="main-nav__link user-nav__search">Поиск по сайту</span></a>
         </li>
-        <li class="user-nav__item">
+        <li class="main-nav__item user-nav__item">
           <a class="user-nav__link" href="">
-            <svg class="user-nav__basket-icon" width="18" height="18">
+            <svg class="user-nav__icon" width="20" height="19">
               <use xlink:href="img/sprite.svg#icon-basket"></use>
             </svg>Корзина: пока пуста</a>
         </li>
@@ -74,6 +75,11 @@
         <ul class="catalog__list">
           <li class="catalog__item card">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-phone.webp 1x, img/photo-1-phone@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x"
                 width="316" height="462" alt="Вязаный зайчик.">
               <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x"
@@ -159,6 +165,7 @@
           <source media="(min-width: 1150px)" src="video/" poster="img/video-desktop.jpg" width="668" height="743">
           <source media="(min-width: 768px)" src="video/" poster="img/video-tablet.jpg" width="683" height="455">
         </video>
+        <button class="video__play-button" type="button" aria-label="Воспроизвести"></button>
         <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
           появляются наши товары.</p>
         <a class="video__button button button--five" href="#">Сделать заказ</a>

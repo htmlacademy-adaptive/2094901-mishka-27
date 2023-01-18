@@ -26,10 +26,11 @@
   display: block;
   margin: 0;
   padding: 0;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
 }
 
 .reviews__text {
+  font-style: normal;
   margin: 0;
   padding: 0;
   min-width: 260px;
@@ -37,11 +38,12 @@
 }
 
 .reviews__container {
-  padding-bottom: 30px;
+  padding-bottom: 31px;
 }
 
 .reviews__author-name {
   .reviews-author-name();
+  font-style: normal;
   color: #000000;
 }
 
@@ -52,7 +54,8 @@
 
 .reviews__button-wrapper {
   display: flex;
-  padding-bottom: 38px;
+  justify-content: space-around;
+  padding-bottom: 31px;
 }
 
 .reviews__button {
@@ -78,15 +81,20 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    background-image: url("../../img/reviews_tablet_background.jpg");
+    background-image: url("../img/review_tablet_background.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review_tablet_background@2x.jpg");
+      background-size: contain;
+    }
   }
 
   .reviews__wrapper {
     .tablet-width-center();
-    padding-top: 82px;
-    padding-bottom: 85px;
+    padding-top: 77px;
+    padding-bottom: 72px;
     display: grid;
     grid-template-areas:
       "A B"
@@ -102,7 +110,7 @@
 
   .reviews__item {
     .reviews-content-second();
-    padding-top: 39px;
+    padding-top: 37px;
     padding-bottom: 61px;
     grid-area: D;
   }
@@ -110,10 +118,12 @@
   .reviews__button-wrapper {
     grid-area: E;
     justify-self: end;
+    padding-bottom: 40px;
   }
 
   .reviews__button {
     border: none;
+    width: 88px;
   }
 
   .reviews__button-container {
@@ -127,6 +137,10 @@
     flex-direction: column;
     grid-area: C;
   }
+
+  .reviews__author-name {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -136,10 +150,10 @@
 
   .reviews__wrapper {
     .desktop-width-center();
-    background-image: url("../../img/reviews_tablet_background.jpg");
+    background-image: url("../img/review_tablet_background.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
-    padding-top: 78px;
+    padding-top: 76px;
     padding-bottom: 67px;
     display: grid;
     grid-template-columns: 175px repeat(2, 1fr);

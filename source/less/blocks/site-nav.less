@@ -1,16 +1,16 @@
 .site-nav {
+  .nav-first();
   position: relative;
   box-sizing: border-box;
   margin: 0;
   padding-left: 0;
   list-style: none;
-  .nav-first();
 }
 
 .site-nav__link {
   display: block;
   padding: 27px 30px 27px 74px;
-  border-bottom: 1px solid #ececec;
+
   color: hwb(0 0% 100%);
   text-decoration: none;
 
@@ -26,6 +26,7 @@
 @media (min-width: @tablet-width) {
   .site-nav {
     .nav-second();
+    width: 336px;
     display: flex;
     grid-area: C;
     justify-content: space-between;
@@ -46,7 +47,7 @@
 
 @media (min-width: @desktop-width) {
   .site-nav {
-    width: 390px;
+    width: 406px;
     position: static;
     align-content: center;
     align-items: center;
@@ -63,7 +64,7 @@
     }
 
     &:nth-child(2) {
-      padding-left: 35px;
+      padding-left: 18px;
     }
   }
 
