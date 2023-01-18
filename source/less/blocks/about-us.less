@@ -13,7 +13,6 @@
   .mobile-title-second();
   margin: 0;
   padding: 0;
-  text-align: center;
   padding-bottom: 28px;
 }
 
@@ -44,8 +43,8 @@
 @media (min-width: @tablet-width) {
   .about-us__wrapper {
     .tablet-width-center();
-    padding-top: 52px;
-    padding-bottom: 83px;
+    margin-top: 52px;
+    margin-bottom: 75px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -104,8 +103,8 @@
 @media (min-width: @desktop-width) {
   .about-us__wrapper {
     .desktop-width-center();
-    padding-top: 68px;
-    padding-bottom: 90px;
+    margin-top: 68px;
+    margin-bottom: 78px;
     grid-template-columns: 175px 1fr 175px;
   }
 
@@ -113,14 +112,11 @@
     .desktop-title();
     padding-bottom: 39px;
     grid-column: 2/3;
-    font-weight: 700;
-    font-size: @table-title;
-    line-height: 50px;
     justify-self: start;
   }
 
   .about-us__list {
-    width: 668px;
+    width: 700px;
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
