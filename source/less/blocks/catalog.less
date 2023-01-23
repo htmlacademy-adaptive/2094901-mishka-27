@@ -12,24 +12,23 @@
   list-style-type: none;
 }
 
-.catalog__item {
-  padding-bottom: 30px;
-}
-
 @media (min-width: @tablet-width) {
   .catalog__wrapper {
     .tablet-width-center();
-    margin-top: 67px;
+    margin-top: 78px;
     margin-bottom: 53px;
   }
 
   .catalog__list {
+
     display: grid;
     row-gap: 54px;
   }
 
   .catalog__item {
     display: grid;
+    min-height: 334px;
+    grid-template-columns: repeat(2, 335px);
     grid-template-areas:
       "A B"
       "A B";
@@ -40,7 +39,7 @@
   .catalog__wrapper {
     .desktop-width-center();
     width: 1050px;
-    margin-top: 111px;
+    margin-top: 131px;
     margin-bottom: 57px;
   }
 
